@@ -1,0 +1,49 @@
+<!--Q9. Write html code to develop a webpage having two frames that divide the webpage into two equal rows and then divide the row into equal columns fill each frame with a different background color. -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Frameset with Hello World</title>
+</head>
+<frameset rows="50%, 50%" frameborder="0" border="0">
+    <frameset cols="50%, 50%" frameborder="0">
+        <frame src="frame1.html" style="background-color: lightblue;" noresize>
+        <frame src="frame2.html" style="background-color: lightgreen;" noresize>
+    </frameset>
+    <frameset cols="50%, 50%" frameborder="0">
+        <frame src="frame3.html" style="background-color: lightcoral;" noresize>
+        <frame src="frame4.html" style="background-color: lightyellow;" noresize>
+    </frameset>
+</frameset>
+</html>
+
+<!-- frame1.html -->
+<!DOCTYPE html>
+<html lang="en">
+<body style="background-color: lightblue;">
+    <h1>Hello World - Frame 1</h1>
+</body>
+</html>
+
+<!-- frame2.html -->
+<!DOCTYPE html>
+<html lang="en">
+<body style="background-color: lightgreen;">
+    <h1>Hello World - Frame 2</h1>
+</body>
+</html>
+
+<!-- frame3.html -->
+<!DOCTYPE html>
+<html lang="en">
+<body style="background-color: lightcoral;">
+    <h1>Hello World - Frame 3</h1>
+</body>
+</html>
+
+<!-- frame4.html -->
+<!DOCTYPE html>
+<html lang="en">
+<body style="background-color: lightyellow;">
+    <h1>Hello World - Frame 4</h1>
+</body>
+</html>
