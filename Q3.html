@@ -1,0 +1,36 @@
+<!--Q3. Write a program for printing class timetable showing use of rowspan and colspan. -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Class Timetable</title>
+</head>
+<body>
+    <h1>Class Timetable</h1>
+    <table border="1">
+        <tr>
+            <th>Day</th>
+            <th>9-10 AM</th>
+            <th>10-11 AM</th>
+            <th>11-12 AM</th>
+            <th>12-1 PM</th>
+        </tr>
+        <tr>
+            <td>Monday</td>
+            <td rowspan="2">Math</td>
+            <td>Science</td>
+            <td>History</td>
+            <td rowspan="3">Lunch Break</td>
+        </tr>
+        <tr>
+            <td>Tuesday</td>
+            <td>English</td>
+            <td>Geography</td>
+        </tr>
+        <tr>
+            <td>Wednesday</td>
+            <td>Physics</td>
+            <td colspan="2">Computer Lab</td>
+        </tr>
+    </table>
+</body>
+</html>
