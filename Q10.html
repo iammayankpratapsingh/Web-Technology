@@ -1,0 +1,37 @@
+<!-- Write a program to create a web page showing the use of inline, internal and External CSS. -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>CSS Example</title>
+    <!-- Internal CSS -->
+    <style>
+        body {
+            background-color: lightgray;
+        }
+        h1 {
+            color: darkblue;
+            text-align: center;
+        }
+        p {
+            color: green;
+            font-size: 18px;
+        }
+    </style>
+    <!-- Linking External CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>CSS Example</h1>
+    <!-- Inline CSS -->
+    <p style="color: red;">This is a paragraph with inline CSS (red text).</p>
+    <p>This paragraph is styled with internal CSS (green text).</p>=
+    <div class="external-css">This text is styled using external CSS (blue text).</div>
+</body>
+</html>
+
+<!-- Styles.css -->
+.external-css {
+    color: blue;
+    font-size: 20px;
+    font-family: Arial, sans-serif;
+}
