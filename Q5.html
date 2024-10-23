@@ -1,0 +1,49 @@
+<!--Q5 Write a program to create a web page using img tag with all its attributes. Write a program to create a web page using image as hyperlink. Create a small website of four pages showing use of external link. -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Combined Web Page</title>
+</head>
+<body>
+    <h1>Welcome to My Combined Web Page</h1>
+    <h2>Image with All Attributes</h2>
+    <img src="example.jpg" alt="Sample Image" width="300" height="200" title="Sample Image" 
+         usemap="#image-map" loading="lazy">
+    <map name="image-map">
+        <area shape="rect" coords="34,44,270,350" alt="Clickable Area" href="https://www.example.com">
+    </map>
+    <h2>Image as Hyperlink</h2>
+    <a href="https://www.google.com" target="_blank">
+        <img src="google-logo.jpg" alt="Google Logo" width="200" height="100">
+    </a>
+    <h2>My Small Website</h2>
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    <section id="home">
+        <h3>Home</h3>
+        <p>This is the home page of my small website.</p>
+        <p>External Link: Visit <a href="https://www.wikipedia.org" target="_blank">Wikipedia</a>.</p>
+    </section>
+    <section id="about">
+        <h3>About</h3>
+        <p>This is the about page.</p>
+        <p>External Link: Learn more on <a href="https://www.w3schools.com" target="_blank">W3Schools</a>.</p>
+    </section>
+    <section id="services">
+        <h3>Services</h3>
+        <p>We offer great services.</p>
+        <p>External Link: Check services on <a href="https://www.github.com" target="_blank">GitHub</a>.</p>
+    </section>
+    <section id="contact">
+        <h3>Contact</h3>
+        <p>Feel free to contact us!</p>
+        <p>External Link: Contact us via <a href="mailto:example@example.com">Email</a>.</p>
+    </section>
+</body>
+</html>
