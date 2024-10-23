@@ -1,0 +1,33 @@
+<!--Q6 Write a program to set a background image for both the page and single elements on the page and control the repetition of the image with the background repeat property. -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Background Image Example</title>
+    <style>
+        body {
+            background: url('background-page.jpg') no-repeat center center fixed;
+            background-size: cover;
+        }
+        .content {
+            background: url('background-element.jpg') repeat-x;
+            padding: 20px;
+            margin: 20px;
+        }
+        .box {
+            background: url('pattern.jpg') repeat-y;
+            width: 300px;
+            height: 150px;
+            margin: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Background Image Example</h1>
+    <div class="content">
+        <p>This div has a background image that repeats horizontally.</p>
+    </div>
+    <div class="box">
+        <p>This box has a background image that repeats vertically.</p>
+    </div>
+</body>
+</html>
