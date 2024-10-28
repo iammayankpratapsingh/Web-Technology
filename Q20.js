@@ -1,7 +1,9 @@
 // Write a JavaScript Program to Calculate the Area of a Triangle.
-function findSquareRoot(num) {
-    return Math.sqrt(num);
+function calculateTriangleArea(base, height) {
+    return 0.5 * base * height;
 }
 
-let number = 16;
-console.log("Square Root: " + findSquareRoot(number));
+let base = 5;
+let height = 10;
+console.log("Area of Triangle: " + calculateTriangleArea(base, height));
+
