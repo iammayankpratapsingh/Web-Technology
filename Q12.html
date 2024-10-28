@@ -1,0 +1,64 @@
+<!--Q12. Write a program to create a web page showing the use of CSS positioning. -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSS Positioning Example</title>
+    <style>
+        .container {
+            position: relative;
+            width: 80%;
+            margin: 20px auto;
+            padding: 20px;
+            border: 2px solid #3498db;
+            background-color: #f0f8ff;
+            height: 300px;
+        }
+        .static-box {
+            position: static;
+            background-color: #ffebcd;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+        .relative-box {
+            position: relative;
+            top: 20px;
+            left: 20px;
+            background-color: #add8e6;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+        .absolute-box {
+            position: absolute;
+            top: 50px;
+            right: 20px;
+            background-color: #90ee90;
+            padding: 10px;
+        }
+        .fixed-box {
+            position: fixed;
+            bottom: 10px;
+            right: 10px;
+            background-color: #ffb6c1;
+            padding: 10px;
+            border: 2px solid #e74c3c;
+        }
+    </style>
+</head>
+<body>
+    <h2 style="text-align: center;">CSS Positioning Example</h2>
+    <div class="container">
+        <div class="static-box">
+            <p>This box is positioned statically (default positioning).</p>
+        </div>
+        <div class="relative-box">
+            <p>This box is positioned relatively (20px from top and left of its normal position).</p>
+        </div>
+        <div class="absolute-box">
+            <p>This box is positioned absolutely (50px from the top and 20px from the right of the container).</p>
+        </div>
+    </div>
+    <div class="fixed-box">
+        <p>This box is positioned fixed (always stays in the same place on the screen).</p>
+    </div>
+</body>
+</html>
