@@ -1,0 +1,105 @@
+<!--Don't Write-->
+<!--Q13. Write a program to design web pages for your college containing a description of the courses, departments, faculties, library etc, use href, list tags. -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>College Website</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f9fa;
+        }
+        .navbar {
+            background-color: #007bff;
+            padding: 1em;
+            text-align: center;
+        }
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+        .section {
+            padding: 20px;
+            max-width: 800px;
+            margin: auto;
+            background-color: white;
+            margin-top: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            color: #007bff;
+        }
+        ul {
+            list-style-type: square;
+            padding-left: 20px;
+        }
+        .footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #007bff;
+            color: white;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <a href="#courses">Courses</a>
+        <a href="#departments">Departments</a>
+        <a href="#faculty">Faculty</a>
+        <a href="#library">Library</a>
+    </div>
+    <div class="section" id="courses">
+        <h2>Courses Offered</h2>
+        <p>We offer a variety of courses across different fields. Here is a list of popular courses:</p>
+        <ul>
+            <li>Bachelor of Science (B.Sc.)</li>
+            <li>Bachelor of Arts (B.A.)</li>
+            <li>Master of Business Administration (MBA)</li>
+            <li>Bachelor of Computer Applications (BCA)</li>
+            <li>Bachelor of Technology (B.Tech)</li>
+        </ul>
+    </div>
+    <div class="section" id="departments">
+        <h2>Departments</h2>
+        <p>Our college has the following departments to support diverse fields of study:</p>
+        <ul>
+            <li>Department of Computer Science</li>
+            <li>Department of Humanities</li>
+            <li>Department of Mathematics</li>
+            <li>Department of Business Studies</li>
+            <li>Department of Engineering</li>
+        </ul>
+    </div>
+    <div class="section" id="faculty">
+        <h2>Our Faculty</h2>
+        <p>Our college has a team of highly qualified and dedicated faculty members:</p>
+        <ul>
+            <li>Prof. John Doe - Computer Science</li>
+            <li>Dr. Sarah Lee - Business Studies</li>
+            <li>Prof. Michael Tan - Engineering</li>
+            <li>Dr. Emily Chen - Mathematics</li>
+            <li>Prof. Laura Smith - Humanities</li>
+        </ul>
+    </div>
+    <div class="section" id="library">
+        <h2>Library</h2>
+        <p>The college library offers a vast collection of books, journals, and digital resources:</p>
+        <ul>
+            <li>Over 50,000 books on various subjects</li>
+            <li>Online access to journals and research papers</li>
+            <li>Dedicated study spaces and reading rooms</li>
+            <li>Digital library for e-books and online courses</li>
+            <li>Experienced staff to assist with research</li>
+        </ul>
+    </div>
+    <div class="footer">
+        <p>&copy; 2024 NIET. All Rights Reserved.</p>
+    </div>
+</body>
+</html>
