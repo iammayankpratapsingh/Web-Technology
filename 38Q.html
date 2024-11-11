@@ -1,0 +1,17 @@
+ <!-- 38. Create HTML Page with JavaScript to Check if a Number is Odd or Even -->
+<!DOCTYPE html>
+<html>
+<body>
+    <input type="number" id="numberInput" placeholder="Enter an integer">
+    <button onclick="checkOddEven()">Check</button>
+    <p id="result"></p>
+
+    <script>
+        function checkOddEven() {
+            const number = parseInt(document.getElementById("numberInput").value);
+            const result = (number % 2 === 0) ? "Even" : "Odd";
+            document.getElementById("result").textContent = `The number is ${result}.`;
+        }
+    </script>
+</body>
+</html>
