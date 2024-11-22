@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dropdown Menu</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+    #dropdown {
+      padding: 10px 20px;
+      background-color: #007BFF;
+      color: white;
+      border: none;
+      cursor: pointer;
+      font-size: 16px;
+      border-radius: 5px;
+    }
+    #options {
+      display: none;
+      margin-top: 10px;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+    #options div {
+      padding: 10px;
+      cursor: pointer;
+    }
+    #options div:hover {
+      background-color: #f0f0f0;
+    }
+  </style>
+</head>
+<body>
+  <div>
+    <button id="dropdown">Toggle Options</button>
+    <div id="options">
+      <div>Option 1</div>
+      <div>Option 2</div>
+      <div>Option 3</div>
+    </div>
+  </div>
+
+  <script>
+    const dropdown = document.getElementById("dropdown");
+    const options = document.getElementById("options");
+
+    dropdown.addEventListener("click", () => {
+      options.style.display = options.style.display === "none" || options.style.display === "" ? "block" : "none";
+    });
+  </script>
+</body>
+</html>
