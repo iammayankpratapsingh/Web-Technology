@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Table</title>
+  <style>
+    table {
+      border-collapse: collapse;
+      width: 100%;
+      margin-top: 20px;
+    }
+    th, td {
+      border: 1px solid #ddd;
+      padding: 8px;
+      text-align: left;
+    }
+    th {
+      background-color: #f4f4f4;
+    }
+    form {
+      margin-bottom: 20px;
+    }
+    input {
+      margin-right: 10px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Student Table</h1>
+
+  <!-- Form to Add Student -->
+  <form id="studentForm">
+    <input type="text" id="erp" placeholder="ERP" required>
+    <input type="text" id="name" placeholder="Name" required>
+    <input type="date" id="dob" required>
+    <input type="text" id="fatherName" placeholder="Father Name" required>
+    <input type="number" id="age" placeholder="Age" required>
+    <select id="gender" required>
+      <option value="" disabled selected>Gender</option>
+      <option value="Male">Male</option>
+      <option value="Female">Female</option>
+      <option value="Other">Other</option>
+    </select>
+    <input type="text" id="address" placeholder="Address" required>
+    <input type="text" id="city" placeholder="City" required>
+    <input type="tel" id="mobile" placeholder="Mobile No" pattern="[0-9]{10}" required>
+    <button type="submit">Add Student</button>
+  </form>
+
+  <!-- Table -->
+  <table id="studentTable">
+    <thead>
+      <tr>
+        <th>ERP</th>
+        <th>Name</th>
+        <th>DOB</th>
+        <th>Father Name</th>
+        <th>Age</th>
+        <th>Gender</th>
+        <th>Address</th>
+        <th>City</th>
+        <th>Mobile No</th>
+      </tr>
+    </thead>
+    <tbody></tbody>
+  </table>
+
+  <script>
+    // Form and Table Elements
+    const form = document.getElementById("studentForm");
+    const tableBody = document.querySelector("#studentTable tbody");
+
+    // Handle Form Submission
+    form.addEventListener("submit", (event) => {
+      event.preventDefault();
+
+      // Get Form Values
+      const erp = document.getElementById("erp").value;
+      const name = document.getElementById("name").value;
+      const dob = document.getElementById("dob").value;
+      const fatherName = document.getElementById("fatherName").value;
+      const age = document.getElementById("age").value;
+      const gender = document.getElementById("gender").value;
+      const address = document.getElementById("address").value;
+      const city = document.getElementById("city").value;
+      const mobile = document.getElementById("mobile").value;
+
+      // Create a New Row
+      const row = document.createElement("tr");
+      row.innerHTML = `
+        <td>${erp}</td>
+        <td>${name}</td>
+        <td>${dob}</td>
+        <td>${fatherName}</td>
+        <td>${age}</td>
+        <td>${gender}</td>
+        <td>${address}</td>
+        <td>${city}</td>
+        <td>${mobile}</td>
+      `;
+
+      // Append Row to Table
+      tableBody.appendChild(row);
+
+      // Clear the Form
+      form.reset();
+    });
+  </script>
+</body>
+</html>
