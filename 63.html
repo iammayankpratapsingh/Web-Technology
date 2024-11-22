@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JavaScript Objects and DOM</title>
+</head>
+<body>
+  <h1>Book Details</h1>
+  <button id="showBook">Show Details</button>
+  <p id="bookInfo"></p>
+
+  <script>
+    // JavaScript Object
+    const book = {
+      title: "1984",
+      author: "George Orwell",
+      year: 1949
+    };
+
+    // DOM Manipulation
+    document.getElementById("showBook").addEventListener("click", () => {
+      document.getElementById("bookInfo").textContent = 
+        `${book.title} by ${book.author}, published in ${book.year}`;
+    });
+  </script>
+</body>
+</html>
